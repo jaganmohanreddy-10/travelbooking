@@ -1,0 +1,1806 @@
+﻿/* ==========================
+   GOOGLE FONT & RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#081B33;
+    color:#ffffff;
+    padding-top:90px;
+    min-height:100vh;
+}
+
+/* ==========================
+        NAVBAR
+========================== */
+
+.navbar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:85px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 8%;
+
+    background:rgba(0,0,0,.35);
+
+    backdrop-filter:blur(12px);
+
+    z-index:1000;
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+}
+
+.logo img{
+
+    width:60px;
+
+    height:60px;
+
+    object-fit:contain;
+}
+
+.logo h2{
+
+    color:#ffffff;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+}
+
+/* ==========================
+      NAVIGATION MENU
+========================== */
+
+.nav-links{
+
+    list-style:none;
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:18px 12px;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:0;
+
+    padding:0;
+}
+
+.nav-links li {
+    line-height:1;
+}
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:500;
+
+    padding:8px 12px;
+
+    border-radius:999px;
+
+    transition:.3s;
+}
+
+.nav-links a:hover{
+
+    background:#FFD700;
+
+    color:#081B33;
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        padding:0 4%;
+    }
+
+    .nav-links {
+        gap:14px 10px;
+    }
+
+    .nav-links a {
+        font-size:14px;
+        padding:8px 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        justify-content:center;
+        padding:12px 4%;
+    }
+
+    .logo {
+        width:100%;
+        justify-content:center;
+    }
+
+    .nav-links {
+        justify-content:center;
+    }
+
+    .login-btn {
+        width:100%;
+        text-align:center;
+    }
+}
+
+/* ==========================
+        LOGIN BUTTON
+========================== */
+
+.login-btn{
+
+    text-decoration:none;
+
+    color:white;
+
+    background:#007BFF;
+
+    padding:12px 28px;
+
+    border-radius:40px;
+
+    transition:.4s;
+
+    font-weight:600;
+}
+
+.login-btn:hover{
+
+    background:#FFD700;
+
+    color:#081B33;
+}
+
+/* ==========================
+        HERO SECTION
+========================== */
+
+
+/* ==========================
+      PAGE HEADER BANNER
+========================== */
+.page-hero {
+    width:100%;
+    min-height:320px;
+    background:linear-gradient(180deg, rgba(0,0,0,0.60), rgba(0,0,0,0.60)), url("../images/hero.jpg") center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    padding:100px 8% 80px;
+    margin-bottom:40px;
+}
+.page-hero h1 {
+    font-size:48px;
+    color:#ffffff;
+    margin-bottom:16px;
+    max-width:700px;
+}
+.page-hero p {
+    color:#d9d9d9;
+    font-size:18px;
+    line-height:1.8;
+    max-width:680px;
+}
+.page-section {
+    padding:80px 8%;
+    background:#081B33;
+}
+.section-card {
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,0.12);
+    border-radius:24px;
+    padding:40px;
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
+}
+.page-hero .button-primary {
+    display:inline-block;
+    background:linear-gradient(90deg, #1C62FF, #28A7FF);
+    color:white;
+    padding:14px 32px;
+    border-radius:999px;
+    text-decoration:none;
+    font-weight:700;
+    margin-top:20px;
+}
+
+.hero{
+
+    width:100%;
+
+    min-height:calc(100vh - 90px);
+
+    background:linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.30)), url("../images/hero.jpg") top center/cover no-repeat;
+
+    position:relative;
+
+    display:flex;
+
+    align-items:flex-start;
+
+}
+
+/* ==========================
+       DARK OVERLAY
+========================== */
+
+.overlay{
+
+    width:100%;
+
+    min-height:calc(100vh - 90px);
+
+    background:rgba(0,0,0,0.45);
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    padding:80px 8% 40px;
+
+    gap:40px;
+
+    flex-wrap:wrap;
+}
+
+/* ==========================
+      HERO CONTENT
+========================== */
+
+.hero-content{
+
+    width:45%;
+
+    min-width:320px;
+}
+
+.hero-content h1{
+
+    font-size:70px;
+
+    line-height:90px;
+
+    color:white;
+
+    margin-bottom:25px;
+}
+
+.hero-content span{
+
+    color:#FFD700;
+}
+
+.hero-content p{
+
+    font-size:22px;
+
+    line-height:36px;
+
+    color:#dddddd;
+}
+/* ==========================
+      SEARCH BOX
+========================== */
+
+.search-box{
+
+    width:520px;
+
+    max-width:100%;
+
+    background:rgba(255,255,255,0.10);
+
+    backdrop-filter:blur(26px);
+
+    border:1px solid rgba(255,255,255,0.20);
+
+    border-radius:26px;
+
+    padding:40px;
+
+    box-shadow:0 18px 40px rgba(0,0,0,.35);
+}
+
+.search-box h2{
+
+    text-align:center;
+
+    color:#ffffff;
+
+    margin-bottom:30px;
+
+    font-size:34px;
+
+    letter-spacing:0.2px;
+}
+
+/* ==========================
+        FORM
+========================== */
+
+.form-row{
+
+    display:flex;
+
+    gap:20px;
+
+    margin-bottom:20px;
+}
+
+.input-box{
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+}
+
+.input-box label{
+
+    color:white;
+
+    margin-bottom:8px;
+
+    font-size:15px;
+
+    font-weight:500;
+}
+
+.input-box input,
+.input-box select{
+
+    height:50px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:10px;
+
+    padding:0 15px;
+
+    font-size:15px;
+
+    background:rgba(255,255,255,.9);
+
+    color:#333;
+}
+
+.input-box input::placeholder{
+
+    color:#777;
+}
+
+/* ==========================
+      SEARCH BUTTON
+========================== */
+
+.search-btn{
+
+    width:100%;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:linear-gradient(90deg, #1C62FF, #28A7FF);
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+
+    margin-top:10px;
+}
+
+.search-btn:hover{
+
+    background:linear-gradient(90deg, #0E4FCC, #1E8EEB);
+
+    transform:translateY(-3px);
+}
+/* ==========================
+      DESTINATIONS
+========================== */
+
+.destinations{
+
+    padding:90px 8%;
+
+    background:#081B33;
+}
+
+.destinations h2{
+
+    text-align:center;
+
+    font-size:40px;
+
+    margin-bottom:50px;
+
+    color:#FFD700;
+}
+
+.destination-container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+    align-items:stretch;
+}
+
+.card{
+
+    flex:1;
+
+    min-width:260px;
+
+    background:#10294d;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    transition:.4s;
+
+    box-shadow:0 14px 35px rgba(0,0,0,.28);
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+}
+
+.card img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:cover;
+
+    display:block;
+}
+
+.card h3{
+
+    margin:20px;
+
+    color:#FFD700;
+}
+
+.card p{
+
+    margin:0 20px 20px;
+
+    color:#ddd;
+}
+
+/* ==========================
+      WHY CHOOSE US
+========================== */
+
+.why-us{
+
+    background:#0D2344;
+
+    padding:90px 8%;
+}
+
+.why-us h2{
+
+    text-align:center;
+
+    font-size:40px;
+
+    margin-bottom:50px;
+
+    color:#FFD700;
+}
+
+.features{
+
+    display:flex;
+
+    gap:25px;
+
+    justify-content:space-between;
+
+    flex-wrap:wrap;
+}
+
+.feature-card{
+
+    flex:1;
+
+    min-width:240px;
+
+    background:rgba(255,255,255,.08);
+
+    padding:30px;
+
+    text-align:center;
+
+    border-radius:15px;
+
+    transition:.4s;
+}
+
+.feature-card:hover{
+
+    transform:translateY(-10px);
+
+    background:rgba(255,255,255,.15);
+}
+
+.feature-card img{
+
+    width:70px;
+
+    margin-bottom:20px;
+}
+
+.feature-card h3{
+
+    color:#FFD700;
+
+    margin-bottom:15px;
+}
+
+.feature-card p{
+
+    color:#ddd;
+
+    line-height:28px;
+}
+
+/* ==========================
+         FOOTER
+========================== */
+
+footer{
+
+    background:#05111f;
+
+    padding:60px 8% 20px;
+}
+
+.footer-container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+}
+
+.footer-box{
+
+    flex:1;
+
+    min-width:220px;
+}
+
+.footer-box h3{
+
+    color:#FFD700;
+
+    margin-bottom:20px;
+}
+
+.footer-box a{
+
+    display:block;
+
+    color:white;
+
+    text-decoration:none;
+
+    margin-bottom:12px;
+}
+
+.footer-box a:hover{
+
+    color:#FFD700;
+}
+
+.footer-box p{
+
+    margin-bottom:12px;
+
+    color:#ddd;
+}
+
+footer hr{
+
+    margin:40px 0;
+
+    border:.5px solid rgba(255,255,255,.15);
+}
+
+.copyright{
+
+    text-align:center;
+
+    color:#bbb;
+}
+/* ==========================
+SEARCH PAGE
+========================== */
+
+.search-page{
+
+padding:150px 8% 60px;
+
+text-align:center;
+
+background:#081B33;
+
+}
+
+.search-page h1{
+
+font-size:50px;
+
+margin-bottom:40px;
+
+color:#FFD700;
+
+}
+
+.search-form{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:20px;
+
+}
+
+.search-form input,
+.search-form select{
+
+height:55px;
+
+padding:15px;
+
+border:none;
+
+border-radius:12px;
+
+font-size:16px;
+
+}
+
+.search-form button{
+
+height:55px;
+
+background:#007BFF;
+
+color:white;
+
+border:none;
+
+border-radius:12px;
+
+font-size:18px;
+
+cursor:pointer;
+
+}
+
+.flight-section{
+
+padding:80px 8%;
+
+}
+
+.flight-section h2{
+
+text-align:center;
+
+margin-bottom:50px;
+
+color:#FFD700;
+
+}
+
+.flight-card{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+background:#10294d;
+
+padding:30px;
+
+border-radius:15px;
+
+margin-bottom:30px;
+
+transition:.4s;
+
+}
+
+.flight-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.flight-card p{
+
+margin-top:10px;
+
+color:#ddd;
+
+}
+
+.book-btn{
+
+display:inline-block;
+
+margin-top:20px;
+
+padding:12px 25px;
+
+background:#007BFF;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:10px;
+
+}
+
+.book-btn:hover{
+
+background:#0056b3;
+
+}
+/* ==========================
+PASSENGER PAGE
+========================== */
+
+.passenger-page{
+
+padding:150px 8% 80px;
+
+background:#081B33;
+
+min-height:100vh;
+
+}
+
+.passenger-page h1{
+
+text-align:center;
+
+font-size:45px;
+
+margin-bottom:40px;
+
+color:#FFD700;
+
+}
+
+.passenger-card{
+
+max-width:1100px;
+
+margin:auto;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(20px);
+
+padding:40px;
+
+border-radius:20px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.4);
+
+}
+
+.passenger-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:25px;
+
+}
+
+.field{
+
+display:flex;
+
+flex-direction:column;
+
+margin-bottom:20px;
+
+}
+
+.field label{
+
+margin-bottom:10px;
+
+color:white;
+
+font-weight:500;
+
+}
+
+.field input,
+.field select,
+.field textarea{
+
+padding:15px;
+
+border:none;
+
+border-radius:10px;
+
+font-size:16px;
+
+outline:none;
+
+}
+
+.field textarea{
+
+resize:none;
+
+}
+
+.continue-btn{
+
+width:100%;
+
+height:55px;
+
+background:#007BFF;
+
+border:none;
+
+color:white;
+
+font-size:18px;
+
+border-radius:12px;
+
+cursor:pointer;
+
+margin-top:20px;
+
+transition:.3s;
+
+}
+
+.continue-btn:hover{
+
+background:#0056b3;
+
+transform:translateY(-3px);
+
+}
+/*=========================
+      SEAT PAGE
+==========================*/
+
+.seat-page{
+
+padding:150px 8% 80px;
+
+background:#081B33;
+
+min-height:100vh;
+
+text-align:center;
+
+}
+
+.seat-page h1{
+
+font-size:45px;
+
+color:#FFD700;
+
+margin-bottom:15px;
+
+}
+
+.seat-info{
+
+color:#ddd;
+
+margin-bottom:40px;
+
+}
+
+.aircraft{
+
+width:700px;
+
+margin:auto;
+
+background:#10294d;
+
+padding:40px;
+
+border-radius:20px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.4);
+
+}
+
+.aircraft h2{
+
+margin-bottom:35px;
+
+color:white;
+
+}
+
+.seat-row{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+margin:20px 0;
+
+}
+
+.aisle{
+
+width:80px;
+
+}
+
+.seat{
+
+width:60px;
+
+height:60px;
+
+margin:8px;
+
+border:none;
+
+border-radius:10px;
+
+font-weight:600;
+
+cursor:pointer;
+
+}
+
+.available{
+
+background:#28a745;
+
+color:white;
+
+}
+
+.occupied{
+
+background:#dc3545;
+
+color:white;
+
+cursor:not-allowed;
+
+}
+
+.selected{
+
+background:#007BFF;
+
+color:white;
+
+}
+
+.seat-legend{
+
+display:flex;
+
+justify-content:center;
+
+gap:40px;
+
+margin-bottom:40px;
+
+}
+
+.legend{
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+color:white;
+
+}
+
+.seat-btn{
+
+margin-top:40px;
+
+}
+
+.seat-btn button{
+
+padding:15px 40px;
+
+font-size:18px;
+
+border:none;
+
+background:#007BFF;
+
+color:white;
+
+border-radius:10px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.seat-btn button:hover{
+
+background:#0056b3;
+
+transform:translateY(-4px);
+
+}
+/*====================================================
+                PAYMENT PAGE
+====================================================*/
+
+.payment-page{
+
+    padding:150px 8% 80px;
+
+    background:#081B33;
+
+    min-height:100vh;
+
+}
+
+.payment-page h1{
+
+    text-align:center;
+
+    font-size:48px;
+
+    color:#FFD700;
+
+    margin-bottom:50px;
+
+}
+
+/*====================================================
+            PAYMENT CONTAINER
+====================================================*/
+
+.payment-container{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:40px;
+
+    align-items:flex-start;
+
+}
+
+/*====================================================
+            PAYMENT CARD
+====================================================*/
+
+.payment-card{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+}
+
+.payment-card h2{
+
+    color:#FFD700;
+
+    margin-bottom:30px;
+
+}
+
+.payment-card label{
+
+    display:block;
+
+    color:white;
+
+    margin-top:18px;
+
+    margin-bottom:8px;
+
+    font-weight:500;
+
+}
+
+.payment-card input,
+
+.payment-card textarea,
+
+.payment-card select{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:10px;
+
+    outline:none;
+
+    font-size:15px;
+
+}
+
+.payment-card textarea{
+
+    resize:none;
+
+}
+
+/*====================================================
+            PAYMENT METHODS
+====================================================*/
+
+.payment-method{
+
+    display:flex;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:15px;
+
+}
+
+.payment-method label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:white;
+
+    font-weight:500;
+
+}
+
+.payment-method input{
+
+    width:auto;
+
+}
+
+/*====================================================
+            CARD ROW
+====================================================*/
+
+.card-row{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:20px;
+
+}
+
+/*====================================================
+            PAY BUTTON
+====================================================*/
+
+.pay-btn{
+
+    width:100%;
+
+    margin-top:30px;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#007BFF;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.pay-btn:hover{
+
+    background:#0056b3;
+
+    transform:translateY(-4px);
+
+}
+
+/*====================================================
+            BOOKING SUMMARY
+====================================================*/
+
+.summary-card{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+    position:sticky;
+
+    top:120px;
+
+}
+
+.summary-card h2{
+
+    color:#FFD700;
+
+    margin-bottom:20px;
+
+}
+
+.summary-card hr{
+
+    margin:18px 0;
+
+    border:1px solid rgba(255,255,255,.15);
+
+}
+
+.summary-card p{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    color:white;
+
+    margin:12px 0;
+
+}
+
+.summary-card h3{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    color:#FFD700;
+
+    margin-top:20px;
+
+    font-size:26px;
+
+}
+
+/*====================================================
+            INPUT FOCUS
+====================================================*/
+
+.payment-card input:focus,
+
+.payment-card textarea:focus,
+
+.payment-card select:focus{
+
+    outline:2px solid #FFD700;
+
+}
+
+/*====================================================
+            RESPONSIVE
+====================================================*/
+
+@media(max-width:1200px){
+    .overlay{
+        flex-direction:column;
+        align-items:flex-start;
+        padding:40px 8%;
+    }
+    .hero-content,
+    .search-box{
+        width:100%;
+        min-width:0;
+    }
+}
+
+@media(max-width:992px){
+
+.payment-container{
+
+grid-template-columns:1fr;
+
+}
+
+.summary-card{
+
+position:relative;
+
+top:0;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.card-row{
+
+grid-template-columns:1fr;
+
+}
+
+.payment-method{
+
+flex-direction:column;
+
+}
+
+.payment-page{
+
+padding:130px 20px 60px;
+
+}
+
+}
+/*====================================
+
+BOOKING CONFIRMATION
+
+====================================*/
+
+.confirmation-page{
+
+padding:150px 8%;
+
+background:#081B33;
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+}
+
+.confirmation-card{
+
+width:700px;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(20px);
+
+padding:50px;
+
+border-radius:20px;
+
+text-align:center;
+
+box-shadow:0 20px 40px rgba(0,0,0,.4);
+
+}
+
+.success-icon{
+
+width:100px;
+
+height:100px;
+
+background:#28a745;
+
+margin:auto;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:50px;
+
+color:white;
+
+margin-bottom:30px;
+
+}
+
+.confirmation-card h1{
+
+font-size:42px;
+
+color:#FFD700;
+
+margin-bottom:10px;
+
+}
+
+.confirmation-card p{
+
+color:#ddd;
+
+margin-bottom:15px;
+
+}
+
+.confirmation-card hr{
+
+margin:30px 0;
+
+border:1px solid rgba(255,255,255,.15);
+
+}
+
+.booking-details p{
+
+display:flex;
+
+justify-content:space-between;
+
+margin:15px 0;
+
+color:white;
+
+}
+
+.confirmation-buttons{
+
+margin-top:40px;
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+}
+
+.download-btn,
+
+.home-btn{
+
+padding:15px 35px;
+
+text-decoration:none;
+
+background:#007BFF;
+
+color:white;
+
+border-radius:10px;
+
+transition:.3s;
+
+}
+
+.download-btn:hover,
+
+.home-btn:hover{
+
+background:#0056b3;
+
+}
+/*==================================
+
+BOARDING PASS
+
+===================================*/
+
+.ticket-page{
+
+padding:150px 8%;
+
+background:#081B33;
+
+min-height:100vh;
+
+}
+
+.ticket-page h1{
+
+text-align:center;
+
+font-size:45px;
+
+color:#FFD700;
+
+margin-bottom:50px;
+
+}
+
+.ticket{
+
+display:flex;
+
+background:white;
+
+border-radius:20px;
+
+overflow:hidden;
+
+box-shadow:0 20px 40px rgba(0,0,0,.4);
+
+}
+
+.ticket-left{
+
+width:65%;
+
+padding:40px;
+
+background:white;
+
+color:#222;
+
+}
+
+.ticket-left h2{
+
+color:#007BFF;
+
+margin-bottom:30px;
+
+}
+
+.ticket-left p{
+
+margin:18px 0;
+
+display:flex;
+
+justify-content:space-between;
+
+}
+
+.ticket-divider{
+
+width:3px;
+
+background:#ccc;
+
+position:relative;
+
+}
+
+.circle-top{
+
+width:30px;
+
+height:30px;
+
+background:#081B33;
+
+border-radius:50%;
+
+position:absolute;
+
+left:-14px;
+
+top:-15px;
+
+}
+
+.circle-bottom{
+
+width:30px;
+
+height:30px;
+
+background:#081B33;
+
+border-radius:50%;
+
+position:absolute;
+
+left:-14px;
+
+bottom:-15px;
+
+}
+
+.ticket-right{
+
+width:35%;
+
+padding:35px;
+
+background:#f4f4f4;
+
+text-align:center;
+
+}
+
+.ticket-right h3{
+
+margin-bottom:25px;
+
+color:#007BFF;
+
+}
+
+.qr{
+
+width:170px;
+
+height:170px;
+
+border:2px dashed #555;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+margin:auto;
+
+margin-bottom:30px;
+
+font-weight:bold;
+
+}
+
+.barcode{
+
+font-size:28px;
+
+letter-spacing:4px;
+
+margin-bottom:25px;
+
+}
+
+.ticket-right h2{
+
+margin-bottom:30px;
+
+color:#FFD700;
+
+}
+
+.ticket-right .download-btn{
+
+display:inline-block;
+
+padding:15px 35px;
+
+background:#007BFF;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:10px;
+
+transition:.3s;
+
+}
+
+.ticket-right .download-btn:hover{
+
+background:#0056b3;
+
+}
